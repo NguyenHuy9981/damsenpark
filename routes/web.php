@@ -17,19 +17,5 @@ Route::get('/', 'HomeController@index')->name('event');
 
 Route::get('/event/{id}', 'HomeController@detail')->name('eventDetail');
 
-Route::get('/category/{id}', 'HomeController@list')->name('category.product');
 
-Route::get('/productDetail/{id}', 'HomeController@detail')->name('product.detail');
-
-Route::get('/addToCart/{id}', 'CartController@addToCart')->name('addToCart');
-
-Route::get('/showCart', 'CartController@showCart')->name('showCart');
-
-Route::get('/updateCart', 'CartController@updateCart')->name('updateCart');
-
-Route::get('/deleteCart', 'CartController@deleteCart')->name('deleteCart');
-
-Route::get('/search', 'HomeController@search')->name('search');
-
-Route::get('/contact', 'HomeController@contact')->name('contact');
 
