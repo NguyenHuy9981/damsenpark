@@ -27,7 +27,7 @@
     	<div class="bg">
 	    	<div class="row">    		
 	    		<div class="col-sm-12 slider-bot">    			   			
-					<h2 class="title text-center">Contact <strong>Us</strong></h2>    			    				    				
+					<h2 class="title text-center">Sự kiện nổi bật</h2>    			    				    				
 					
 					<div id="slider-carousel" class="carousel slide slider-top" data-ride="carousel">
 						<ol class="carousel-indicators">
@@ -41,7 +41,7 @@
 							@foreach ($events as $key => $event)
 							<div class="item {{$key == 0 ? 'active' : ''}}">
 								<div class="col-sm-6">
-									<h1><span>Shopping4</span></h1>
+									<h1><span>Little & Little</span></h1>
 									<h2>{{ $event->event_name }}</h2>
 									<p>{{ $event->business_name }}</p>
 									<a class="btn btn-default get" href="{{ route('eventDetail', $event->id) }}" role="button">Xem ngay</a>
